@@ -21,7 +21,7 @@ const Navbar = () => {
               to='/'
               className='text'
             >
-              OCI
+              <img src="/src/assets/images/logo.png"/> OCI
             </Link>
           </h1>
         </div>
@@ -40,16 +40,16 @@ const Navbar = () => {
         </button>
 
         <div
-          className='collapse navbar-collapse justify-content-center'
+          className='collapse navbar-collapse justify-content-end'
           id='navbarNav'
         >
-          <ul className='navbar-nav align-center gap-5'>
+          <ul className='navbar-nav align-center gap-3'>
             <li className='nav-item '>
               <NavLink
                 className='nav-link link text-dark'
                 to={NEW_SUBMISISON}
               >
-                Nueva Solicitud
+                <i className ="inav bi bi-plus-lg"> </i> Nueva Solicitud
               </NavLink>
             </li>
             <li className='nav-item'>
@@ -57,7 +57,7 @@ const Navbar = () => {
                 className='nav-link link text-dark '
                 to={GENERAL_LIST}
               >
-                Listado de planillas
+               <i className="inav bi bi-files"> </i>  Listado de planillas
               </NavLink>
             </li>
             <li className='nav-item'>
@@ -65,7 +65,7 @@ const Navbar = () => {
                 className='nav-link link text-dark'
                 to={ESTADISTICAS}
               >
-                Estadisticas
+                <i className=" inav bi bi-bar-chart-fill"> </i> Estadisticas
               </NavLink>
             </li>
             <li className='nav-item'>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 className='nav-link link text-dark'
                 to={CIRCULOS}
               >
-                Circulos
+                <i className="inav bi bi-house-gear"> </i> Circulos
               </NavLink>
             </li>
             <li className='nav-item'>
@@ -81,20 +81,14 @@ const Navbar = () => {
                 className='nav-link link text-dark'
                 to={ORGANISMOS}
               >
-                Organismos
+                <i className="inav bi bi-building-gear"> </i> Organismos
               </NavLink>
             </li>
           </ul>
 
           <div className='icong justify-content-right '>
             <div className='d-flex m-3 gap-3'>
-              <Link
-                className='nav-link link text-success text-primary display-4'
-                to='/'
-              >
-                <i className='inav bi-question-lg'></i>
-              </Link>
-
+              
               <NavLink
                 className='nav-link link text-success text-primary display-4'
                 to={USERS}
@@ -102,6 +96,13 @@ const Navbar = () => {
                 <i className="inav bi bi-person-fill-gear"></i>
               </NavLink>
 
+              <Link
+                className='nav-link link text-success text-primary display-4'
+                to='/'
+              >
+                <i className='inav bi-question-lg'></i>
+              </Link>
+              
               <Link
                 className='nav-link link text-success text-primary display-4'
                 to='/'
